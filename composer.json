@@ -1,0 +1,38 @@
+{
+    "name": "kiczort/empty-project",
+    "description": "Empty project with phpspec and taskphp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grzegorz Koziński",
+            "email": "gkozinski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.1",
+        "task/task": "dev-master",
+        "task/phpspec": "0.1.*",
+        "task/archive": "0.3.*",
+        "task/box": "0.2.*",
+        "task/process": "0.3.*",
+        "task/filesystem": "0.2.*",
+        "task/cli": "0.3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Task\\": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "repositories": [
+        {
+          "type": "vcs",
+          "url": "git@github.com:kiczort/task.git"
+        }
+    ]
+}
